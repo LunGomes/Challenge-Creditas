@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de cliente</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-cinza-100">
+    <section
+      class="max-w-6xl w-[90%] mx-auto min-h-[calc(100dvh-5rem)] mt-10 bg-ambe-300 pb-10"
+    >
+      <!-- Header -->
+      <div class="max-w-7xl m-8 flex flex-col gap-6 rounded-2xl">
+        <img
+          src="./images/logo-creditas.png"
+          alt="Logo da Creditas"
+          class="w-20 h-20"
+        />
+
+        <div class="flex flex-col gap-2">
+          <p class="text-black text-xl font-medium">Oi, Julia Dias</p>
+          <h1 class="text-black text-3xl font-semibold leading-tight">
+            Muito bom ter você por aqui!
+          </h1>
+        </div>
+      </div>
+      <!-- Fim Header -->
+
+      <!-- Container "Seu Crédito" -->
+      <div class="bg-white p-8 mb-8 flex flex-col gap-6 rounded-2xl">
+        <h1 class="text-black text-2xl font-semibold leading-tight">
+          Seu Crédito
+        </h1>
+
+        <div class="flex flex-col gap-2">
+          <p class="text-black text-lg font-light">Parcela 15</p>
+          <h1 class="text-black text-3xl font-semibold leading-tight">
+            R$ 3.000,00
+          </h1>
+          <p class="text-black text-lg font-light">Vence em 09/07</p>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <button
+            type="button"
+            class="w-fit bg-verde-main text-black font-medium px-6 py-2 rounded-lg hover:bg-verde-secundario transition-colors"
+          >
+            Abrir boleto
+          </button>
+
+          <i class="fa-solid fa-chevron-right text-verde-main"></i>
+        </div>
+      </div>
+      <!-- Fim Container "Seu Crédito" -->
+
+      
+    </section>
+
+    <!-- Navbar -->
+    <div class="flex flex-row justify-around bg-white py-8 w-screen fixed bottom-0 left-0 z-10">
+      
+      <a href="./index.html">
+        <div class="flex flex-col items-center gap-2">
+          <i class="fa-solid fa-location-dot text-verde-secundario text-xl"></i>
+          <p class="text-verde-secundario text-xl">Início</p>
+        </div>
+      </a>
+
+      <a href="./missoes.html">
+        <div class="flex flex-col items-center gap-2">
+          <i class="fa-solid fa-layer-group text-verde-secundario text-xl"></i>
+          <p class="text-verde-secundario text-xl">Missões</p>
+        </div>
+      </a>
+
+      <a href="./perfil.html">
+        <div class="flex flex-col items-center gap-2">
+          <i class="fa-solid fa-user text-verde-secundario text-xl"></i>
+          <p class="text-verde-secundario text-xl">Perfil</p>
+        </div>
+      </a>
+
+    </div>
+    <!-- Fim Navbar -->
+
+  </body>
+</html>
