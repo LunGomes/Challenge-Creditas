@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="../dist/css/styles.css" />
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section class="max-w-6xl w-[90%] mx-auto min-h-[calc(100dvh-5rem)] mt-10 bg-ambe-300 pb-10">
+    <nav class="relative w-full bg-white p-4 flex justify-center items-center">
+
+      <div class="absolute left-4">
+        <i class="fa-solid fa-arrow-left text-lime-500 text-xl"></i>
+      </div>
+
+      <h1 class="text-lg font-semibold text-gray-900">
+        Pagar parcela
+      </h1>
+
+      <div class="absolute right-4">
+        <i class="fa-regular fa-circle-question text-gray-600 text-xl"></i>
+      </div>
+
+    </nav>
+    <!-- card de parcela -->
+    <div class="bg-white p-8 mb-8 flex flex-col gap-6 rounded-2xl">
+
+      <p class="text-sm font-medium text-gray-500">
+        1 de 24
+      </p>
+
+      <p class="text-4xl font-semibold text-gray-900 mt-1">
+        R$ 1000,00
+      </p>
+
+      <div class="flex items-center mt-4">
+
+        <i class="fa-regular fa-calendar text-lime-600 text-2xl mr-2"></i>
+
+        <span class="text-lg font-medium text-gray-800">
+          Vencimento em 10/09/2025
+        </span>
+      </div>
+
+    </div>
+
+    <!-- card de cartao -->
+    <div class="bg-gray-100 p-5 mb-8 flex flex-col gap-6 rounded-2xl">
+
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4">
+        Cartão de Crédito
+      </h2>
+
+      <a href="#" class="flex justify-between items-center bg-white rounded-lg p-4 mb-3 shadow-sm">
+        <span class="text-base font-medium text-gray-800">*Cartão adicionado</span>
+
+        <div class="flex items-center space-x-2">
+          <span class="text-base font-medium text-gray-500">*0000</span>
+          <i class="fa-solid fa-chevron-right text-lime-500 text-xs"></i>
+        </div>
+      </a>
+
+      <a href="#" class="flex justify-between items-center bg-white rounded-lg p-4 shadow-sm">
+        <span class="text-base font-medium text-gray-800">Adicionar cartão</span>
+        <i class="fa-solid fa-chevron-right text-lime-500 text-xs"></i>
+      </a>
+
+    </div>
+
+    <!-- botao de pagamento -->
+    <footer class="max-w-6xl w-[90%] mx-auto fixed bottom-0 py-5">
+      <button class="w-full bg-lime-500 text-black font-medium py-3 rounded-xl">
+        Realizar o pagamento
+      </button>
+    </footer>
+  </section>
+</body>
+
+</html>
