@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creditas</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-cinza-100">
+    <!-- Header -->
+    <div class="bg-white p-8 flex flex-col gap-4 items-center">
+        <div class="flex items-center justify-between w-full">
+            <a href="./index.html" class="flex items-center">
+                <i class="fa-solid fa-arrow-left-long text-verde-main text-3xl"></i>
+            </a>
+
+            <h1 class="text-black text-2xl font-semibold">Seu crédito</h1>
+
+            <i class="fa-regular fa-circle-question text-verde-main text-3xl"></i>
+        </div>
+    </div>
+    <!-- Fim Header -->
+
+    <!-- Card de "Pagar boleto" -->
+    <div class="mx-4">
+        <a href="">
+            <div class="p-6 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between">
+                <div class="flex items-center gap-4 flex-1">
+                    <img src="./images/icon_boleto.svg" alt="Ícone do boleto">
+
+                    <div class="flex flex-col gap-3 flex-1">
+                        <div>
+                            <p class="text-black text-2xl font-semibold">Pagar boleto</p>
+                            <p class="text-black text-xl font-base">
+                                Vence em 12/12/2025
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </a>
+
+        <i class="fa-solid fa-chevron-right text-verde-main text-xl"></i>
+    </div>
+    </div>
+    <!-- Fim Card de "Pagar boleto" -->
+
+    <div class="flex gap-3 items-center justify-center px-4">
+        <div class="flex-1 p-4 rounded-2xl flex flex-col gap-4 text-center items-center">
+            <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center">
+                <i class="fa-solid fa-file-contract text-4xl text-verde-secundario"></i>
+            </div>
+            <p class="text-black text-lg font-light">Informações
+                contratuais</p>
+        </div>
+
+        <div class="flex-1 p-4 rounded-2xl flex flex-col gap-4 text-center items-center">
+            <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center">
+                <img src="./images/icon-Anteciparparcelas.svg" alt="Antecipar parcelas" class="w-10 h-10" />
+            </div>
+            <p class="text-black text-lg font-light">Antecipar parcelas</p>
+        </div>
+
+        <div class="flex-1 p-4 rounded-2xl flex flex-col gap-4 text-center items-center">
+            <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center">
+                <img src="./images/icon_mudarVencimento.svg" alt="Antecipar parcelas" class="w-10 h-10" />
+            </div>
+            <p class="text-black text-lg font-light">Mudar
+                vencimento</p>
+        </div>
+
+    </div>
+
+    <!-- Triângulo acima da section -->
+    <div class="flex justify-center">
+        <div
+            class="w-0 h-0 border-l-[15px] border-r-[15px] border-b-[15px] border-l-transparent border-r-transparent border-b-status-pendente">
+        </div>
+    </div>
+
+    <section class="bg-white w-full rounded-t-4xl overflow-hidden">
+
+        <div class="bg-status-pendente py-6">
+            <!-- Linha do tempo da jornada -->
+            <div class="relative flex items-center justify-center w-full">
+                <!-- Linha verde  -->
+                <div class="absolute top-2/4 left-[15%] right-[-15%] h-[6px] bg-white"></div>
+
+                <!-- Parcela 1 -->
+                <div class="flex flex-col items-center z-10">
+                    <div
+                        class="flex items-center justify-center w-14 h-14 border-4 border-white rounded-full bg-status-pendente text-white text-xl font-semibold">
+                        1
+                    </div>
+                </div>
+
+                <!-- Parcela 2 -->
+                <div class="flex flex-col items-center mx-12 z-10">
+                    <div
+                        class="flex items-center justify-center w-24 h-24 border-4  border-white rounded-full bg-status-pendente text-white text-4xl font-semibold shadow-lg">
+                        2
+                    </div>
+                </div>
+
+                <!-- Parcela 3 -->
+                <div class="flex flex-col items-center z-10">
+                    <div
+                        class="flex items-center justify-center w-14 h-14 border-4 border-white rounded-full bg-status-pendente text-white text-xl font-semibold">
+                        3
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Linha do tempo da jornada -->
+
+            <div class="flex gap-10 justify-center mt-6">
+                <p class="text-white text-2xl ">Maio</p>
+
+                <div class="relative inline-block">
+
+                    <button id="dropdownBtn"
+                        class="text-white text-3xl font-medium border-b-2 border-white pb-1 flex justify-between items-center px-2">
+                        Junho
+                        <svg class="w-5 h-5 text-white ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div id="dropdownMenu"
+                        class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-40 bg-white rounded-lg shadow-lg hidden z-10 border border-verde-secundario overflow-hidden">
+                        <ul>
+                            <li
+                                class="px-4 py-2 text-verde-secundario text-xs uppercase font-semibold cursor-default select-none text-center">
+                                Mês / Ano
+                            </li>
+                                <hr class="border-verde-main"/>
+                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800 text-sm text-center">Mai
+                                / 2025</li>
+                                <hr class="border-verde-main"/>
+                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800 text-sm text-center">Jun
+                                / 2025</li>
+                                <hr class="border-verde-main"/>
+                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800 text-sm text-center">Jul
+                                / 2025</li>
+                                <hr class="border-verde-main"/>
+                            <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800 text-sm text-center">Ago
+                                / 2025</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="text-white text-2xl ">Julho</p>
+            </div>
+        </div>
+
+        <script>
+            const btn = document.getElementById('dropdownBtn');
+            const menu = document.getElementById('dropdownMenu');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                    menu.classList.add('hidden');
+                }
+            });
+        </script>
+
+        <!-- Informações da parcela -->
+        <div class="max-w-7xl mx-8 mt-8 mb-6 flex flex-col gap-4 rounded-2xl">
+            <div class="flex justify-between items-center">
+                <h1 class="text-status-pendente text-3xl font-semibold leading-tight">
+                    2ª Parcela
+                </h1>
+                <p class="text-status-pendente text-xl font-light">Pendente</p>
+            </div>
+
+            <div>
+                <p class="text-black text-2xl font-semibold">R$ 200,00</p>
+                <p class="text-black text-xl font-light">Vencimento em 12/12/2025</p>
+            </div>
+        </div>
+        <!-- Fim Informações da parcela -->
+
+        <!-- Cards de informações do perfil -->
+        <div class="flex gap-3 items-center justify-center max-w-7xl mx-6 mt-7 mb-6">
+            <div class="flex-1 p-4 rounded-2xl flex flex-col gap-4 bg-verde-claro items-center">
+                <img src="./images/pix-icon.svg" alt="Ícone do Pix" class="w-10 h-10">
+
+                <div class="text-center">
+                    <p class="text-verde-secundario text-2xl font-semibold">Pix</p>
+                </div>
+            </div>
+
+            <div class="flex-1 p-4 rounded-2xl flex flex-col gap-4 bg-verde-claro items-center">
+                <img src="./images/icon_boleto2.svg" alt="Ícone do Pix" class="w-10 h-10">
+
+                <div class="text-center">
+                    <p class="text-verde-secundario text-2xl font-semibold">Boleto</p>
+                </div>
+            </div>
+
+            <div class="flex-1 p-4 rounded-2xl flex flex-col gap-4 bg-verde-claro items-center">
+                <img src="./images/card-icon.svg" alt="Ícone do Pix" class="w-10 h-10">
+
+                <div class="text-center">
+                    <p class="text-verde-secundario text-2xl font-semibold">Cartão</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Cards de informações do perfil -->
+    </section>
+
+</body>
+
+</html>

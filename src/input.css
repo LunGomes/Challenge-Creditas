@@ -8,5 +8,8 @@
     --color-laranja-claro: #FEE1A8;
     --color-azul-claro: #E0FEFD;
     --color-verde-claro: #E1FFA8;
-    --color-verde-quiz: #ADCC72;
+    --color-status-pendente: #B88A00;
+    --color-status-atraso: #DE3543;
+    --color-status-paga: #8EDB00;
+    --color-status-futura: #007D8F;
 }
