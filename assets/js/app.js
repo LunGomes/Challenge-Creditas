@@ -89,13 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
         e.target.value = valor;
     });
 
-    // Máscara Nome (Apenas Letras e Espaços)
     inputNome.addEventListener('input', (e) => {
         let valor = e.target.value.replace(/[^a-zA-Z\s]/g, '');
         e.target.value = valor;
     });
 
-    // ---LÓGICA DA API VIACEP ---
     const buscarEndereco = async (cep) => {
         try {
             const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
@@ -131,27 +129,17 @@ document.addEventListener('DOMContentLoaded', () => {
         modalSenhaContainer.classList.remove('opacity-0', 'pointer-events-none', 'bg-opacity-0');
         modalSenhaContainer.classList.add('opacity-100', 'pointer-events-auto', 'bg-opacity-60');
     });
-
-
-    // --- 9. LÓGICA DOS BOTÕES DO MODAL DE SENHA ---
-
-    // Botão "Continuar" (Dentro do Modal)
     btnModalContinuar.addEventListener('click', () => {
         // esconder com transição
         modalSenhaContainer.classList.add('opacity-0', 'pointer-events-none', 'bg-opacity-0');
         modalSenhaContainer.classList.remove('opacity-100', 'pointer-events-auto', 'bg-opacity-60');
 
-        // redireciona depois de esconder (opcional: aguardar a transição)
-        setTimeout(() => { window.location.href = 'sucesso.html'; }, 200);
+        setTimeout(() => { window.location.href = 'sucesso-cartao.html'; }, 200);
     });
-
-    // Função para fechar o modal
     const fecharModal = () => {
         modalSenhaContainer.classList.add('opacity-0', 'pointer-events-none', 'bg-opacity-0');
         modalSenhaContainer.classList.remove('opacity-100', 'pointer-events-auto', 'bg-opacity-60');
     };
-
-    // Adiciona o evento de fechar no fundo escuro e no link "Voltar"
     btnModalFecharBackdrop.addEventListener('click', fecharModal);
     btnModalFecharLink.addEventListener('click', fecharModal);
 
