@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creditas</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-cinza-100">
+  <!-- Header -->
+  <div class="bg-white p-8 mb-8 flex flex-col gap-2 items-center">
+    <div class="flex items-center justify-between w-full">
+      <a href="./menu_credito.html" class="flex items-center">
+        <i class="fa-solid fa-arrow-left-long text-verde-main text-3xl"></i>
+      </a>
+
+      <h1 class="text-black text-2xl font-semibold">Sua Jornada</h1>
+
+      <i class="fa-regular fa-circle-question text-verde-main text-3xl"></i>
+    </div>
+  </div>
+  <!-- Fim Header -->
+
+  <section class="bg-white w-full rounded-t-4xl overflow-hidden">
+    <!-- Triângulo pra baixo da section -->
+    <div class="absolute right-50 flex justify-center z-10">
+      <div
+        class="w-0 h-0 border-l-[16px] border-r-[16px] border-t-[16px] border-l-transparent border-r-transparent border-t-cinza-100">
+      </div>
+    </div>
+
+    <div class="bg-status-futura py-6">
+      <!-- Linha do tempo da jornada -->
+      <div class="relative flex items-center justify-center w-full mt-3">
+        <!-- Linha branca  -->
+        <div class="absolute top-2/4 left-[0%] right-[0%] h-[6px] bg-white"></div>
+
+        <!-- Parcela 2 -->
+        <a href="./menu_jornada-pendente.html" class="z-10">
+          <div class="flex flex-col items-center">
+            <div
+              class="flex items-center justify-center w-14 h-14 border-4 border-white rounded-full bg-status-futura text-white text-xl font-semibold">
+              3
+            </div>
+          </div>
+        </a>
+
+        <!-- Parcela 3 -->
+        <a href="./menu_credito.html" class="z-10">
+          <div class="flex flex-col items-center mx-12">
+            <div
+              class="flex items-center justify-center w-24 h-24 border-4 border-white rounded-full bg-status-futura text-white text-4xl font-semibold shadow-lg">
+              4
+            </div>
+          </div>
+        </a>
+
+        <!-- Parcela 4 -->
+        <div class="flex flex-col items-center z-10">
+          <div
+            class="flex items-center justify-center w-14 h-14 border-4 border-white rounded-full bg-status-futura text-white text-xl font-semibold">
+            5
+          </div>
+        </div>
+      </div>
+      <!-- Fim Linha do tempo Icons da jornada -->
+
+      <!-- Linha do tempo Mêses da jornada -->
+      <div class="flex gap-8 justify-center mt-6 ml-12">
+        <p class="text-white text-2xl -translate-x-3">Julho</p>
+
+        <div class="relative inline-block">
+          <button id="dropdownBtn"
+            class="text-white text-3xl font-medium border-b-2 border-white pb-1 flex items-center gap-2">
+            Agosto
+            <i id="chevronIcon" class="fa-solid fa-chevron-down text-base text-white"></i>
+          </button>
+
+          <!-- Dropdown -->
+          <div id="dropdownMenu"
+            class="absolute left-1/2 transform -translate-x-1/2 mt-2 w-40 bg-white rounded-lg shadow-lg hidden z-10 border border-verde-secundario overflow-hidden">
+            <ul>
+              <li
+                class="px-4 py-2 text-verde-secundario text-xs uppercase font-semibold cursor-default select-none text-center">
+                Mês / Ano
+              </li>
+
+              <hr class="border-verde-main" />
+
+              <a href="./menu_jornada-atraso.html">
+                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800 text-sm text-center">
+                  Mai / 2025
+                </li>
+              </a>
+
+              <hr class="border-verde-main" />
+
+              <a href="./menu_jornada-paga.html">
+                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800 text-sm text-center">
+                  Jun / 2025
+                </li>
+              </a>
+
+              <hr class="border-verde-main" />
+
+              <a href="./menu_jornada-pendente.html">
+                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800 text-sm text-center">
+                  Jul / 2025
+                </li>
+              </a>
+
+              <hr class="border-verde-main" />
+
+              <a href="./menu_jornada-futura.html">
+                <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer text-gray-800 text-sm text-center">
+                  Ago / 2025
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-white text-2xl -translate-x-3">Setembro</p>
+      </div>
+    </div>
+    <!-- Fim Linha do tempo Mêses da jornada -->
+
+    <!-- Icon de status -->
+    <div class="max-w-7xl mx-8 mt-8 flex flex-col gap-4">
+      <div class="flex flex-col justify-between items-center">
+        <img src="./images/status/status-icon_futura.svg" alt="Icon de status pendente" />
+        <p class="text-status-futura text-xl mt-2">4ª Parcela</p>
+        <h1 class="text-status-futura text-3xl font-semibold leading-tight">
+          Futura
+        </h1>
+      </div>
+    </div>
+    <!-- Icon de status -->
+
+    <div class="mx-8 mt-12 mb-9">
+      <!-- Coluna esquerda -->
+      <div class="flex flex-col justify-between">
+        <!-- Informações da parcela -->
+        <div class="flex flex-col gap-4">
+          <div>
+            <div class="flex items-center gap-1">
+              <i class="fa-solid fa-dollar-sign text-2xl text-status-futura"></i>
+              <p class="text-black text-xl font-light">Total da parcela</p>
+            </div>
+            <p class="text-black text-2xl font-medium">R$ 200,00</p>
+          </div>
+
+          <div>
+            <div class="flex items-center gap-1">
+              <i class="fa-solid fa-calendar-xmark text-xl text-status-futura"></i>
+              <p class="text-black text-2xl font-light">Vencimento</p>
+            </div>
+            <p class="text-black text-2xl font-medium">09/11/2025</p>
+          </div>
+        </div>
+
+        <p class="text-status-futura text-2xl mt-10 mb-1">Desconto:</p>
+        <div class="flex justify-between w-full gap-4">
+          <!-- Card mudar valor do desconto -->
+          <div class="w-30 h-24 p-2 rounded-2xl flex flex-col gap-2 bg-verde-claro items-center justify-center">
+            <img src="./images/desconto-icon.svg" alt="Ícone do Pix" class="w-10 h-10" />
+            <div class="text-center">
+              <p class="text-verde-secundario text-xl font-semibold">
+                R$ 20,00
+              </p>
+            </div>
+          </div>
+          <!-- Fim Card mudar valor do desconto -->
+
+          <!-- Card mudar antecipar parcelas -->
+          <div class="flex-1 h-24 p-2 rounded-2xl flex flex-col gap-2 bg-verde-claro items-center justify-center">
+            <img src="./images/pagar-icon.svg" alt="Ícone do Pix" class="w-10 h-10" />
+            <div class="text-center">
+              <p class="text-verde-secundario text-xl font-semibold">
+                Antecipar parcela(s)
+              </p>
+            </div>
+          </div>
+          <!-- Fim Card antecipar parcelas -->
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<script src="./js/dropdown.js"></script>
+
+</html>
