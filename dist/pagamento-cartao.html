@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creditas</title>
+    <link rel="stylesheet" href="../dist/css/styles.css" />
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-cinza-100">
+
+    <!-- Header -->
+    <div class="bg-white p-8 mb-8 flex flex-col gap-2 items-center">
+        <div class="flex items-center justify-between w-full">
+            <a href="./menu_credito.html" class="flex items-center">
+                <i class="fa-solid fa-arrow-left-long text-verde-main text-3xl"></i>
+            </a>
+
+            <h1 class="text-black text-2xl font-semibold">Pagar parcela</h1>
+
+            <i class="fa-regular fa-circle-question text-verde-main text-3xl"></i>
+        </div>
+    </div>
+    <!-- Fim Header -->
+
+    <section class="max-w-6xl w-[90%] mx-auto ">
+
+        <!-- card de informações da parcela -->
+        <div class="max-w-7xl mx-8 mb-8 flex flex-col gap-">
+            <p class="text-sm font-light text-black">
+                1 de 24
+            </p>
+            
+            <p class="text-4xl font-medium text-black mt-1">
+                R$ 1000,00
+            </p>
+            
+            <div class="flex items-center mt-2">
+                <i class="fa-solid fa-calendar-xmark text-lime-600 text-2xl mr-2"></i>
+                <p class="text-lg font-light text-gray-800">
+                    Vencimento em 22/10/2025
+                </p>
+                
+            </div>
+        </div>
+        <!-- Fim card de informações da parcela -->
+
+        <!-- card de parcelas -->
+        <div class="bg-white rounded-xl p-5 mb-34">
+
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
+                Cartão de Crédito
+            </h2>
+
+            <div class="bg-cinza-100 rounded-lg shadow-sm p-3 mb-3 overflow-visible">
+
+                <button id="btn-toggle-parcelas" class="w-full flex justify-between items-center p-1">
+                    <span class="text-base font-medium text-gray-800">*Cartão adicionado</span>
+                    <div class="flex items-center space-x-2">
+                        <span id="cartao-final-digitos" class="text-base font-medium text-gray-500">*0000</span>
+                        <i id="icon-parcelas" class="fa-solid fa-chevron-right text-lime-500 text-xs"></i>
+                    </div>
+                </button>
+
+                <div id="content-parcelas" class="px-4 mt-4 hidden bg-white rounded-2xl">
+
+                    <button
+                        class="grid grid-cols-3 items-center w-full py-3 border-b border-verde-secundario hover:bg-lime-50">
+                        <span class="text-base font-medium text-gray-800 text-left">1x</span>
+                        <span class="text-base font-medium text-gray-600 text-left">R$1000,00</span>
+                        <span class="text-base font-medium text-gray-600 text-right">R$1000,00</span>
+                    </button>
+
+                    <button
+                        class="grid grid-cols-3 items-center w-full py-3 border-b border-verde-secundario hover:bg-lime-50">
+                        <span class="text-base font-medium text-gray-800 text-left">2x</span>
+                        <span class="text-base font-medium text-gray-600 text-left">R$550,00</span>
+                        <span class="text-base font-medium text-gray-600 text-right">R$1100,00</span>
+                    </button>
+
+                    <button
+                        class="grid grid-cols-3 items-center w-full py-3 border-b border-verde-secundario hover:bg-lime-50">
+                        <span class="text-base font-medium text-gray-800 text-left">3x</span>
+                        <span class="text-base font-medium text-gray-600 text-left">R$400,00</span>
+                        <span class="text-base font-medium text-gray-600 text-right">R$1200,00</span>
+                    </button>
+
+                    <button
+                        class="grid grid-cols-3 items-center w-full py-3 border-b border-verde-secundario hover:bg-lime-50">
+                        <span class="text-base font-medium text-gray-800 text-left">4x</span>
+                        <span class="text-base font-medium text-gray-600 text-left">R$325,00</span>
+                        <span class="text-base font-medium text-gray-600 text-right">R$1300,00</span>
+                    </button>
+
+                    <button
+                        class="grid grid-cols-3 items-center w-full py-3 border-b border-verde-secundario hover:bg-lime-50">
+                        <span class="text-base font-medium text-gray-800 text-left">5x</span>
+                        <span class="text-base font-medium text-gray-600 text-left">R$280,00</span>
+                        <span class="text-base font-medium text-gray-600 text-right">R$1400,00</span>
+                    </button>
+
+                    <button class="grid grid-cols-3 items-center w-full py-3 hover:bg-lime-50">
+                        <span class="text-base font-medium text-gray-800 text-left">6x</span>
+                        <span class="text-base font-medium text-gray-600 text-left">R$250,00</span>
+                        <span class="text-base font-medium text-gray-600 text-right">R$1500,00</span>
+                    </button>
+
+                </div>
+            </div>
+            <!-- Fim card de parcelas -->
+
+            <!-- adicionar novo cartão -->
+            <div class="bg-cinza-100 rounded-lg shadow-sm p-3">
+
+                <button id="btn-toggle-novo-cartao" class="w-full flex justify-between items-center p-1">
+                    <span class="text-base font-medium text-gray-800">Adicionar cartão</span>
+                    <i id="icon-novo-cartao" class="fa-solid fa-chevron-right text-lime-500 text-xs"></i>
+                </button>
+
+                <div id="content-novo-cartao" class="px-4 pt-4 pb-6 mt-4 space-y-4 bg-white rounded-2xl">
+
+                    <form id="form-novo-cartao" class="space-y-4">
+
+                        <div>
+                            <h3 class="text-base font-medium text-gray-800">Informações do cartão</h3>
+                            <hr class="border-t border-verde-secundario mt-2 mb-1">
+                        </div>
+
+                        <input type="text" id="numero" placeholder="Número do cartão"
+                            class="w-full rounded-md bg-gray-100 border-2 border-gray-200 focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                            required>
+
+                        <div class="flex space-x-2">
+                            <input type="text" id="validade" placeholder="Data de validade"
+                                class="basis-[60%] min-w-[120px] rounded-md bg-gray-100 border-2 border-gray-200 focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                                required />
+
+                            <input type="text" id="cvv" placeholder="CVV"
+                                class="basis-[40%] min-w-[64px] rounded-md bg-gray-100 border-2 border-gray-200 focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                                required />
+                        </div>
+
+                        <input type="text" id="nome" placeholder="Nome no cartão"
+                            class="w-full rounded-md bg-gray-100 border-2 border-transparent focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                            required />
+
+                        <div class="pt-2">
+                            <h3 class="text-base font-medium text-gray-800">Endereço de cobrança</h3>
+                            <hr class="border-t border-verde-secundario mt-2 mb-1">
+                        </div>
+
+                        <input type="text" id="cep" placeholder="CEP"
+                            class="w-full rounded-md bg-gray-100 border-2 border-transparent focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                            required />
+
+                        <input type="text" id="estado" placeholder="Estado"
+                            class="w-full rounded-md bg-gray-100 border-2 border-transparent focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                            required />
+
+                        <input type="text" id="cidade" placeholder="Cidade"
+                            class="w-full rounded-md bg-gray-100 border-2 border-transparent focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                            required />
+
+                        <input type="text" id="rua" placeholder="Rua"
+                            class="w-full rounded-md bg-gray-100 border-2 border-transparent focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                            required />
+
+                        <input type="text" id="num_end" placeholder="Número"
+                            class="w-full rounded-md bg-gray-100 border-2 border-transparent focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out"
+                            required />
+
+                        <input type="text" id="complemento" placeholder="Complemento"
+                            class="w-full rounded-md bg-gray-100 border-2 border-transparent focus:border-verde-main focus:outline-none focus:ring-0 py-3 px-4 text-gray-900 placeholder-gray-500 transition-all duration-200 ease-in-out" />
+
+
+                        <div class="pt-2">
+                            <button type="submit" class="w-full bg-lime-500 text-black font-medium py-3 rounded-xl">
+                                Salvar
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- botao de pagamento -->
+    <div class="bg-verde-claro p-8 w-full flex flex-col items-center fixed bottom-0 rounded-t-4xl">
+        <button id="btn-realizar-pagamento" class="w-full bg-lime-500 text-black font-medium py-3 rounded-xl">
+            Realizar o pagamento
+        </button>
+    </div>
+    <!-- Fim botao de pagamento -->
+
+    <!-- Modal de Senha -->
+    <div id="modal-senha-container"
+        class="fixed inset-0 w-full h-full flex flex-col justify-between items-center bg-verde-main bg-opacity-60 pointer-events-none opacity-0 transition-opacity duration-300">
+
+        <!-- Logo centralizada na parte verde -->
+        <div class="flex-1 flex items-center justify-center w-full">
+            <img src="./images/creditas-svg.svg" alt="Logo da creditas" class="w-54 h-auto">
+        </div>
+
+        <!-- Backdrop (opcional para clique fora) -->
+        <div id="btn-modal-fechar-backdrop" class="absolute inset-0 w-full h-full"></div>
+
+        <!-- Card de senha fixo no final -->
+        <div class="relative bg-white rounded-t-2xl p-6 w-full max-w-md  z-10">
+
+            <h2 class="text-xl font-semibold text-center text-verde-secundario">
+                Digite a senha de transação
+            </h2>
+            <p class="text-sm text-gray-600 text-center mt-2 mb-6">
+                Para sua segurança, digite a senha do seu app (6 dígitos).
+            </p>
+
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <i class="fa-solid fa-lock text-verde-secundario"></i>
+                </div>
+                <input type="password" id="input-senha" placeholder="••••••" maxlength="6"
+                    class="w-full bg-gray-100 placeholder-verde-secundario border-2 border-gray-200 focus:border-verde-main focus:outline-none focus:ring-0 rounded-md py-3 pl-12 pr-4 text-center text-lg tracking-[0.3em] transition-all duration-200 ease-in-out"
+                    required>
+            </div>
+
+            <button id="btn-modal-continuar" class="w-full bg-lime-500 text-black font-medium py-3 rounded-xl mt-6">
+                Continuar
+            </button>
+
+            <button id="btn-modal-fechar-link" class="w-full text-center text-gray-600 font-medium pt-3 mt-2">
+                Voltar
+            </button>
+        </div>
+    </div>
+    <!-- Fim Modal de Senha -->
+
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
