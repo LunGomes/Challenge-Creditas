@@ -2,6 +2,11 @@
 
 @theme {
     --color-cinza-100: #F1F3F2;
+    --color-cinza-800: #565455;
     --color-verde-main: #8EDB00;
     --color-verde-secundario: #317500;
+    --color-laranja-claro: #FEE1A8;
+    --color-azul-claro: #E0FEFD;
+    --color-verde-claro: #E1FFA8;
+    --color-verde-quiz: #ADCC72;
 }
