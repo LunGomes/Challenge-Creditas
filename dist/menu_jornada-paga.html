@@ -140,7 +140,7 @@
         <img src="./images/status/status-icon-pago.svg" alt="Icon de status pendente" />
         <p class="text-verde-secundario text-xl mt-2">2ª Parcela</p>
         <h1 class="text-verde-secundario text-3xl font-semibold leading-tight">
-          Pendente
+          Paga
         </h1>
       </div>
     </div>
@@ -189,8 +189,21 @@
       </div>
     </div>
   </section>
+
+  <!-- Modal de Download -->
+  <div id="popup-download"
+    class="fixed inset-0 w-full h-full flex items-center justify-center bg-opacity-30 opacity-0 pointer-events-none transition-opacity duration-300 z-20">
+    <div class="bg-verde-claro rounded-xl p-6 w-80 text-center">
+      <p class="text-gray-900 text-xl font-medium">Iniciando download...</p>
+      <button id="btn-fechar-popup" class="mt-4 w-full bg-verde-secundario text-white text-lg font-medium py-2 rounded-xl">
+        Fechar
+      </button>
+    </div>
+  </div>
+
 </body>
 
 <script src="./js/dropdown.js"></script>
+<script src="./js/popup.js"></script>
 
 </html>
