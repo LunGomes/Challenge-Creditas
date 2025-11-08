@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creditas</title>
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" href="./images/logo-creditas.png" type="image/x-icon" />
 
   <!-- Font Awesome  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -74,27 +75,41 @@
     </div>
     <!-- Fim Cards de informações do perfil -->
 
-    <div class="mx-4 mt-2">
+    <div class="mx-4 mt-4 mb-6 flex gap-2 items-center justify-center">
+      <a href="#"
+        class="w-full h-9 flex items-center justify-center bg-verde-secundario text-white text-xl font-semibold py-1 rounded-xl">
+        Missões
+      </a>
+
+      <a href="./perfil_Config.html"
+        class="w-full h-9 flex items-center justify-center bg-verde-main text-black text-lg  py-1 rounded-xl">
+        Configurações
+      </a>
+    </div>
+
+    <div class="mx-4 ">
       <h1 class="text-verde-secundario text-3xl font-semibold">
-        Escolha sua missão
+        Novas missões para você
       </h1>
 
       <!-- Card 1 -->
-      <a href="./acesso_pesquisas.html" class="block w-full">
+      <a href="./missoes_pesquisas.html" class="block w-full">
         <div
           class="p-4 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between border border-verde-main shadow-lg">
           <div class="flex items-center gap-3 flex-1">
-            <i class="fa-solid fa-book-bookmark text-4xl text-verde-main"></i>
+            <i class="fa-solid fa-book-bookmark text-4xl text-verde-secundario"></i>
 
             <div class="flex flex-col gap-3 flex-1">
               <div>
                 <p class="text-black text-2xl font-semibold">Pesquisa</p>
                 <p class="text-black text-xl font-base">
-                  Como você investe hoje?
+                  Quais benefícios você mais valoriza?
                 </p>
               </div>
               <!-- Linha verde -->
-              <div class="h-[12px] rounded-xl bg-verde-secundario w-full"></div>
+              <div class="w-full h-[12px] rounded-full border-2 border-verde-secundario overflow-hidden">
+                <div class="h-full bg-verde-secundario border-verde-secundario w-2/5 rounded-full"></div>
+              </div>
             </div>
           </div>
 
@@ -103,27 +118,239 @@
       </a>
 
       <!-- Card 2 (duplicado) -->
-      <a href="./realizarTarefa_Telefone.html" class="block w-full">
+      <a href="./realizarTarefa_Email.html" class="block w-full">
         <div
           class="p-4 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between border border-verde-main shadow-lg">
           <div class="flex items-center gap-3 flex-1">
-            <i class="fa-solid fa-clipboard-check text-4xl text-verde-main"></i>
+            <i class="fa-solid fa-clipboard-check text-4xl text-verde-secundario"></i>
 
             <div class="flex flex-col gap-3 flex-1">
               <div>
                 <p class="text-black text-2xl font-semibold">Tarefa</p>
                 <p class="text-black text-xl font-base">
-                  Adicione o seu telefone!
+                  Cadastre seu email!
                 </p>
               </div>
               <!-- Linha verde -->
-              <div class="h-[12px] rounded-xl bg-verde-secundario w-full"></div>
+              <div class="w-full h-[12px] rounded-full border-2 border-verde-secundario overflow-hidden">
+                <div class="h-full bg-verde-secundario border-verde-secundario w-2/5 rounded-full"></div>
+              </div>
             </div>
           </div>
 
           <i class="fa-solid fa-chevron-right text-right text-verde-secundario text-2xl"></i>
         </div>
       </a>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="mx-4 mt-8">
+      <h1 class="text-verde-secundario text-3xl font-semibold">
+        Meu progresso
+      </h1>
+
+      <!-- Progesso de pesquisas  -->
+      <div class="border border-verde-main mt-4 rounded-2xl">
+
+        <div class="p-6 rounded-2xl flex bg-white items-center justify-between ">
+          <div class="flex flex-col text-start gap-3 flex-1">
+            <p class="text-verde-secundario text-2xl font-semibold">Progresso de pesquisas</p>
+            <div>
+              <p class="text-black text-xl font-base">
+                Você completou 1 de 5 pesquisas
+              </p>
+              <div class="w-full h-[19px] rounded-full border-2 border-verde-main overflow-hidden">
+                <div class="h-full bg-verde-main w-1/5 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 bg-white rounded-2xl">
+
+          <a class="flex py-3 w-full border-b border-verde-secundario ">
+            <div class="flex items-center w-full px-3 justify-between ">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-book-bookmark text-xl text-verde-secundario"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="text-lg font-medium text-verde-secundario">Como você investe hoje?</span>
+                  <span class=" text-gray-600 -mt-2">Concluído</span>
+                </div>
+              </div>
+
+              <span class="text-base font-medium text-verde-secundario whitespace-nowrap">
+                + 20 pts
+              </span>
+            </div>
+          </a>
+
+          <a href="./missoes_pesquisas.html" class="flex py-3 w-full border-b border-verde-secundario hover:bg-lime-50">
+            <div class="flex items-center w-full p-3 justify-between bg-cinza-200 rounded-xl">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-book-bookmark text-xl text-verde-main"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="mb-1 font-medium text-cinza-800">Quais benefícios você mais valoriza?</span>
+                  <span class=" text-gray-600 -mt-2">Pendente</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-lock text-xl text-verde-main"></i>
+            </div>
+          </a>
+
+          <a href="./missoes_pesquisas.html" class="flex py-3 w-full border-b border-verde-secundario hover:bg-lime-50">
+            <div class="flex items-center w-full p-3 justify-between bg-cinza-200 rounded-xl">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-book-bookmark text-xl text-verde-main"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="mb-1 font-medium text-cinza-800">O que pesa na sua escolha de banco?</span>
+                  <span class=" text-gray-600 -mt-2">Pendente</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-lock text-xl text-verde-main"></i>
+            </div>
+          </a>
+
+          <a href="./missoes_pesquisas.html" class="flex py-3 w-full border-b border-verde-secundario hover:bg-lime-50">
+            <div class="flex items-center w-full p-3 justify-between bg-cinza-200 rounded-xl">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-book-bookmark text-xl text-verde-main"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="mb-1 font-medium text-cinza-800">Quais serviços financeiros você usa?</span>
+                  <span class=" text-gray-600 -mt-2">Pendente</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-lock text-xl text-verde-main"></i>
+            </div>
+          </a>
+
+          <a href="./missoes_pesquisas.html"
+            class="flex py-3 mb-3 w-full border-b border-verde-secundario hover:bg-lime-50">
+            <div class="flex items-center w-full p-3 justify-between bg-cinza-200 rounded-xl">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-book-bookmark text-xl text-verde-main"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="mb-1 font-medium text-cinza-800">Quais usos você valoriza para pontos?</span>
+                  <span class=" text-gray-600 -mt-2">Pendente</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-lock text-xl text-verde-main"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Progesso de tarefas  -->
+      <div class="border border-verde-main mt-4 rounded-2xl">
+
+        <div class="p-6 rounded-2xl flex bg-white items-center justify-between ">
+          <div class="flex flex-col text-start gap-3 flex-1">
+            <p class="text-verde-secundario text-2xl font-semibold">Progresso de tarefas</p>
+            <div>
+              <p class="text-black text-xl font-base">
+                Você completou 1 de 5 tarefas
+              </p>
+              <div class="w-full h-[19px] rounded-full border-2 border-verde-main overflow-hidden">
+                <div class="h-full bg-verde-main w-1/5 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-4 bg-white rounded-2xl">
+
+          <a class="flex py-3 w-full border-b border-verde-secundario ">
+            <div class="flex items-center w-full px-3 justify-between ">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-phone text-xl text-verde-secundario"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="text-lg font-medium text-verde-secundario">Telefone</span>
+                  <span class=" text-gray-600 -mt-2">Concluído</span>
+                </div>
+              </div>
+
+              <span class="text-base font-medium text-verde-secundario whitespace-nowrap">
+                + 20 pts
+              </span>
+            </div>
+          </a>
+
+          <a href="./realizarTarefa_Email.html"
+            class="flex py-3 w-full border-b border-verde-secundario hover:bg-lime-50">
+            <div class="flex items-center w-full p-3 justify-between bg-cinza-200 rounded-xl">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-envelope text-xl text-verde-main"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="text-lg font-medium text-cinza-800">Email</span>
+                  <span class=" text-gray-600 -mt-2">Pendente</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-lock text-xl text-verde-main"></i>
+            </div>
+          </a>
+
+          <a href="./realizarTarefa_Endereco.html"
+            class="flex py-3 w-full border-b border-verde-secundario hover:bg-lime-50">
+            <div class="flex items-center w-full p-3 justify-between bg-cinza-200 rounded-xl">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-location-dot text-xl text-verde-main"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="text-lg font-medium text-cinza-800">Endereço</span>
+                  <span class=" text-gray-600 -mt-2">Pendente</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-lock text-xl text-verde-main"></i>
+            </div>
+          </a>
+
+          <a href="./realizarTarefa_Renda.html"
+            class="flex py-3 w-full border-b border-verde-secundario hover:bg-lime-50">
+            <div class="flex items-center w-full p-3 justify-between bg-cinza-200 rounded-xl">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-dollar-sign text-xl text-verde-main"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="text-lg font-medium text-cinza-800">Renda</span>
+                  <span class=" text-gray-600 -mt-2">Pendente</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-lock text-xl text-verde-main"></i>
+            </div>
+          </a>
+
+          <a href="./realizarTarefa_Profissao.html"
+            class="flex py-3 mb-3 w-full border-b border-verde-secundario hover:bg-lime-50">
+            <div class="flex items-center w-full p-3 justify-between bg-cinza-200 rounded-xl">
+              <div class="flex items-center gap-3 min-w-0 ">
+                <i class="fa-solid fa-user text-xl text-verde-main"></i>
+
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="text-lg font-medium text-cinza-800">Profissão</span>
+                  <span class=" text-gray-600 -mt-2">Pendente</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-lock text-xl text-verde-main"></i>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div
@@ -141,11 +368,8 @@
               <p class="text-gray-500 text-xl font-bold">= R$0,22</p>
             </div>
           </div>
-          <!-- Linha verde  -->
         </div>
       </div>
-    </div>
-    </div>
   </section>
 
   <!-- Navbar -->

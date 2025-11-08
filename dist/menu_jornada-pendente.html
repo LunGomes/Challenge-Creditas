@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Creditas</title>
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" href="./images/logo-creditas.png" type="image/x-icon" />
 
   <!-- Font Awesome  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -46,7 +47,7 @@
         <a href="./menu_jornada-paga.html" class="z-10">
           <div class="flex flex-col items-center">
             <div
-              class="flex items-center justify-center w-14 h-14 border-4 border-white rounded-full bg-status-pendente text-white text-xl font-semibold">
+              class="flex items-center justify-center w-14 h-14 border-4 border-white rounded-full bg-verde-secundario text-white text-xl font-semibold">
               2
             </div>
           </div>
@@ -66,7 +67,7 @@
         <a href="./menu_jornada-futura.html" class="z-10">
           <div class="flex flex-col items-center">
             <div
-              class="flex items-center justify-center w-14 h-14 border-4 border-white rounded-full bg-status-pendente text-white text-xl font-semibold">
+              class="flex items-center justify-center w-14 h-14 border-4 border-white rounded-full bg-status-futura text-white text-xl font-semibold">
               4
             </div>
           </div>
@@ -169,7 +170,7 @@
         </div>
 
         <!-- Card mudar data de vencimento -->
-        <div
+        <!-- <div
           class="w-auto h-24 p-2 rounded-2xl flex flex-col gap-2 bg-verde-claro items-center justify-center self-end mt-auto">
           <img src="./images/mudarVencimento-icon.svg" alt="Ícone do Pix" class="w-8 h-8" />
           <div class="text-center">
@@ -177,7 +178,34 @@
               Mudar vencimento
             </p>
           </div>
+        </div> -->
+        <!-- Card mudar data de vencimento -->
+
+        <!-- Card antecipar parcelas parcela pendente (corrigido) -->
+        <div
+          class="relative w-48 h-24 p-2 rounded-2xl flex flex-col gap-1 bg-verde-claro items-center justify-center mt-12"
+          style="overflow: visible;"> <!-- importante: overflow visível para permitir a cápsula flutuar -->
+
+          <!-- Cápsula de desconto: mesma posição/efeito da futura -->
+          <div
+            class="absolute z-20 bg-verde-secundario text-white  font-semibold px-3 py-1 rounded-full shadow-md"
+            style="top: 0; right: 0; transform: translate(-10%, -50%);">
+            - R$ 20
+          </div>
+
+          <div class="flex items-center justify-center gap-2">
+            <img src="./images/pagar-icon.svg" alt="Ícone do Pix" class="w-7 h-7" />
+            <p class="text-verde-secundario text-lg font-semibold text-center">
+              Antecipar parcela(s)
+            </p>
+          </div>
+
+          <p class="text-cinza-800   text-sm font-medium text-center leading-tight">
+            Você economiza R$ 20,00
+          </p>
         </div>
+        <!-- Fim Card antecipar parcelas -->
+
       </div>
 
       <!-- Coluna direita (cards de pagamento) -->
@@ -191,7 +219,7 @@
             </div>
           </div>
         </a>
-        
+
         <!-- Card Boleto -->
         <div class="w-24 h-24 p-2 rounded-2xl flex flex-col gap-2 bg-verde-claro items-center justify-center">
           <img src="./images/icon_boleto2.svg" alt="Ícone do Boleto" class="w-8 h-8" />

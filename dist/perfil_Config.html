@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creditas</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" href="./images/logo-creditas.png" type="image/x-icon" />
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-verde-main">
+
+  <!-- Header -->
+  <div class="max-w-7xl m-8 flex flex-col gap-4 items-center">
+    <div class="relative inline-block">
+      <img src="./images/imagem_Julia2.jpg" alt="Perfil da Julia Dias" class="w-50 h-50 rounded-full object-cover" />
+
+      <div class="absolute bottom-0 right-10 w-6 h-6 bg-verde-secundario rounded-full flex items-center justify-center">
+        <i class="fa-solid fa-plus text-white text-[12px]"></i>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <h1 class="text-white text-3xl font-semibold leading-tight">
+        Julia Dias
+      </h1>
+    </div>
+  </div>
+  <!-- Fim Header -->
+
+  <section class="bg-white w-full min-h-[calc(100dvh-22rem)] rounded-t-4xl pb-10">
+    <!-- Cards de informações do perfil -->
+    <div class="flex gap-3 items-center justify-center p-4">
+      <div class="flex gap-4 w-full">
+
+        <div class="flex-1 p-4 rounded-2xl flex flex-col items-start justify-between bg-laranja-claro min-h-[120px]">
+          <div class="w-10 h-10 rounded-full bg-verde-secundario flex items-center justify-center">
+            <i class="fa-solid fa-dollar-sign text-xl text-white"></i>
+          </div>
+
+          <div class="text-left">
+            <p class="text-black text-lg font-semibold">220</p>
+            <p class="text-black text-lg font-light">Pontos</p>
+          </div>
+        </div>
+
+        <a href="./acesso_missoes.html"
+          class="flex-1 p-4 rounded-2xl flex flex-col items-start justify-between bg-azul-claro min-h-[120px]">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-medal text-3xl text-verde-secundario"></i>
+          </div>
+          <div class="text-left">
+            <p class="text-black text-lg font-semibold">2</p>
+            <p class="text-black text-lg font-light">Missão</p>
+          </div>
+        </a>
+
+        <div class="flex-1 p-4 rounded-2xl flex flex-col items-start justify-between bg-verde-claro min-h-[120px]">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <i class="fa-solid fa-book-bookmark text-3xl text-verde-secundario"></i>
+          </div>
+
+          <div class="text-left">
+            <p class="text-black text-lg font-semibold">Aprendiz</p>
+            <p class="text-black text-lg font-light">Rank</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Fim Cards de informações do perfil -->
+
+    <div class="mx-4 mt-4 mb-6 flex gap-2 items-center justify-center">
+      <a href="./perfil.html"
+        class="w-full h-9 flex items-center justify-center bg-verde-main text-black text-lg  py-1 rounded-xl">
+        Missões
+      </a>
+
+      <a href="#"
+        class="w-full h-9 flex items-center justify-center bg-verde-secundario text-white text-xl font-semibold py-1 rounded-xl">
+        Configurações
+      </a>
+    </div>
+
+    <!-- Segurança e privacidade -->
+    <div class="mx-4">
+      <h1 class="text-verde-secundario text-3xl font-semibold">
+        Segurança e Privacidade
+      </h1>
+
+      <p class="mt-1 text-lg">Gerencie suas configurações de privacidade e segurança</p>
+
+      <div
+        class="p-4 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between border border-verde-main shadow-lg">
+        <div class="flex items-center gap-3 flex-1">
+          <i class="fa-solid fa-bell text-4xl text-verde-secundario"></i>
+
+          <div class="flex flex-col gap-3 flex-1">
+            <div>
+              <p class="text-black text-2xl font-semibold">Notificações</p>
+              <p class="text-black text-xl font-base">
+                Ative suas notificações
+              </p>
+            </div>
+          </div>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="sr-only peer" />
+            <div class="w-11 h-6 bg-gray-300 peer-checked:bg-verde-main rounded-full transition-all duration-300"></div>
+            <div
+              class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all duration-300 peer-checked:translate-x-5">
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Segurança e privacidade -->
+
+    <!-- Ajuda e Suporte -->
+    <div class="mx-4 mt-6">
+      <h1 class="text-verde-secundario text-3xl font-semibold">
+        Ajuda e Suporte
+      </h1>
+
+      <p class="mt-1 text-lg">Tire suas dúvidas e obtenha ajuda</p>
+
+      <div
+        class="p-4 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between border border-verde-main shadow-lg">
+        <div class="flex items-center gap-3 flex-1">
+          <i class="fa-regular fa-circle-question text-4xl text-verde-secundario"></i>
+
+          <div class="flex flex-col gap-3 flex-1">
+            <div>
+              <p class="text-black text-2xl font-semibold">Perguntas frequentes</p>
+              <p class="text-black text-xl font-base">
+                Tire suas dúvidas
+              </p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right text-right text-verde-secundario text-2xl"></i>
+        </div>
+      </div>
+
+      <div
+        class="p-4 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between border border-verde-main shadow-lg">
+        <div class="flex items-center gap-3 flex-1">
+          <i class="fa-solid fa-file-invoice text-4xl text-verde-secundario"></i>
+
+          <div class="flex flex-col gap-3 flex-1">
+            <div>
+              <p class="text-black text-2xl font-semibold">Termos e condições de uso</p>
+              <p class="text-black text-xl font-base">
+                Atualizado em 07/08/2023
+              </p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right text-right text-verde-secundario text-2xl"></i>
+        </div>
+      </div>
+
+      <div
+        class="p-4 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between border border-verde-main shadow-lg">
+        <div class="flex items-center gap-3 flex-1">
+          <i class="fa-solid fa-file-invoice text-4xl text-verde-secundario"></i>
+
+          <div class="flex flex-col gap-3 flex-1">
+            <div>
+              <p class="text-black text-2xl font-semibold">Política de privacidade</p>
+              <p class="text-black text-xl font-base">
+                Atualizado em 25/03/2025
+              </p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right text-right text-verde-secundario text-2xl"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Fim Ajuda e Suporte -->
+
+    <!-- Sobre o App -->
+    <div class="mx-4 mt-6 mb-25">
+      <h1 class="text-verde-secundario text-3xl font-semibold">
+        Sobre o App
+      </h1>
+
+      <p class="mt-1  text-lg">Informações sobre o aplicativo e gerenciamento da conta</p>
+
+      <div
+        class="p-4 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between border border-verde-main shadow-lg">
+        <div class="flex items-center gap-3 flex-1">
+          <i class="fa-solid fa-trash-can text-4xl text-verde-secundario"></i>
+
+          <div class="flex flex-col gap-3 flex-1">
+            <div>
+              <p class="text-black text-2xl font-semibold">Cancelar conta</p>
+              <p class="text-black text-xl font-base">
+                Você não terá mais acesso ao App
+              </p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right text-right text-verde-secundario text-2xl"></i>
+        </div>
+      </div>
+
+      <div
+        class="p-4 mt-4 rounded-2xl flex gap-4 bg-white items-center justify-between border border-verde-main shadow-lg">
+        <div class="flex items-center gap-3 flex-1">
+          <i class="fa-solid fa-right-from-bracket text-4xl text-verde-secundario"></i>
+
+          <div class="flex flex-col gap-3 flex-1">
+            <div>
+              <p class="text-black text-2xl font-semibold">Sair</p>
+              <p class="text-black text-xl font-base">
+                Logout do App
+              </p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right text-right text-verde-secundario text-2xl"></i>
+        </div>
+      </div>
+
+      <p class="text-center mt-6 text-lg">Versão 8.225.0</p>
+    </div>
+    <!-- Fim Sobre o App -->
+
+  </section>
+
+  <!-- Navbar -->
+  <div class="flex flex-row justify-around bg-white py-8 w-screen fixed bottom-0 left-0 z-10">
+    <a href="./index.html">
+      <div class="flex flex-col items-center gap-2">
+        <i class="fa-solid fa-location-dot text-verde-secundario text-2xl"></i>
+        <p class="text-verde-secundario text-xl">Início</p>
+      </div>
+    </a>
+
+    <a href="./acesso_missoes.html">
+      <div class="flex flex-col items-center gap-2">
+        <i class="fa-solid fa-layer-group text-verde-secundario text-2xl"></i>
+        <p class="text-verde-secundario text-xl">Missões</p>
+      </div>
+    </a>
+
+    <a href="./perfil.html">
+      <div class="flex flex-col items-center gap-2">
+        <i class="fa-solid fa-user text-verde-secundario text-2xl"></i>
+        <p class="text-verde-secundario text-xl">Perfil</p>
+      </div>
+    </a>
+  </div>
+  <!-- Fim Navbar -->
+</body>
+
+</html>
